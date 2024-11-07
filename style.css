@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --white: #F5F5f5;
+    --light: #e0c9cb;
+    --tan: #c3a1a0;
+    --rose: #ba7e7e;
+    --dark: #4e4e4e;
+    --pink: #d9aab7;
+}
+
+body {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    padding-top: 10%;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    width: 40rem;
+    background: var(--white);
+    box-shadow: 5px 5px 15px rgba(186, 126, 126, 0.5);
+    border: 10px;
+    padding: 1rem;
+}
+
+
+p {
+    font: .6rem;
+    color: var(--rose);
+    letter-spacing: 1px;
+}
+
+.images-and-sizes {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    & img {
+        width: 18em;
+    }
+
+    & .sildeshow-buttons {
+        display: flex;
+        justify-content: center;
+        gap: 1em;
+    }
+
+    & span {
+        width: 7px;
+        height: 7px;
+        border-radius: 50%;
+        background: var(--light);
+    }
+
+    & .focus {
+        background: var(--rose);
+    }
+
+    & .pick {
+        text-transform: uppercase;
+    }
+
+    & .sizes {
+        display: flex;
+        justify-content: flex-start;
+        gap: .4em;
+
+        & span {
+            border: 1px solid var(--light);
+            width: 24px;
+            height: 24px;
+            display: flex;
+            border-radius: 0%;
+            align-items: center;
+            background: none;
+            justify-content: center;
+            padding: 1px;
+            font-size: 0.7em;
+            cursor: pointer;
+
+            &:hover {
+                background: var(--rose);
+                color: var(--white);
+                transition: all 0.4s ease-in-out;
+            }
+        }
+
+        & .focus {
+            background: var(--rose);
+            color: var(--white);
+        }
+    }
+
+}
+.product{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    & p{
+        text-transform: uppercase;
+    }
+    & h1{
+        font-size: 1.2rem;
+        color: var(--dark);
+        
+    }
+    & h2{
+        color: var(--tan);
+        margin-top: ;
+    }
+    & .description p{
+        text-transform: none;
+        letter-spacing: 0;
+        padding-bottom: 0.5rem;
+        color: var(--dark);
+        font-size: 1rem;
+        line-height: 1.5em;
+        text-align: justify;
+    }
+    & button{
+        background: #cda9ac;
+        padding: 10px;
+        display: inline-block;
+        outline: 0;
+        border: 0;
+        border-radius: 2px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        color: var(--white);
+        cursor: pointer;
+
+        &:hover{
+            background: var(--rose);
+            transition: all .4s ease-in-out;
+        }
+    }
+    & .add{
+        width: 67%;
+    }
+    & .like{
+        width: 22%;
+    }
+
+
+}
+
